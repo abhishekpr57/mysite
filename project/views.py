@@ -63,9 +63,9 @@ def message(request):
         id1 = request.POST['id']
         contact.objects.filter(id=id1).delete()
 
-    mes = contact.objects.all()
+    mess = contact.objects.all()
 
-    return render(request, 'message.html', {'mes': mes})
+    return render(request, 'message.html', {'mes': mess})
 
 
 def contect11(request):
